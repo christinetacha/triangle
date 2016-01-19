@@ -1,4 +1,8 @@
 var triangle = function(a, b, c) {
-  if ((a + b < c) || (b + c < a) || (a +c < b));
-  return false;
+  if (a && b === c) {
+  return true;
+} else if ((a === b && a != c) || (a === c && a != b)) { 
+  return true;
 }
+
+};

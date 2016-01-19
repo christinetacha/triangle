@@ -1,5 +1,14 @@
 describe ('triangle', function() {
-  it("it is false if the sum of any 2 sides is less than or equal to the 3rd side", function() {
-    expect(triangle(2, 2, 6)).to.equal(false);
+
+  it("it is true if all sides are equal", function() {
+    expect(triangle(3, 3, 3)).to.equal(true);
+  });
+
+  it("it is true if two sides are equal", function() {
+    expect(triangle(3, 3, 2)).to.equal(true);
+  });
+
+  it("it is true if all three sides are different", function() {
+    expect(triangle(3, 2, 1)).to.equal(true);
   });
 });
