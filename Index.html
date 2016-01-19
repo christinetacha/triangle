@@ -6,10 +6,34 @@
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>Epicodus Wiki</title>
+    <title>Triangle Tracker</title>
   </head>
-  
+
   <body>
-    
+    <div class="container">
+      <h1>Triangle Tracker</h1>
+      <p>
+        Enter 3 numbers to find out what kind of triangle they will generate:
+      </p>
+
+      <form id="triangle-tracker">
+        <div class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="num1">Number 1</label>
+            <input type="number" class="form-control" id="num1" placeholder="Number 1">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="num2">Number 2</label>
+            <input type="number" class="form-control" id="num2" placeholder="Number 2">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="num3">Number 3</label>
+            <input type="number" class="form-control" id="num3" placeholder="Number 3">
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Find out!</button>
+      </form>
+
   </body>
 </html>
